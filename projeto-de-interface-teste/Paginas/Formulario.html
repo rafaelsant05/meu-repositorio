@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--Formulário-->
+    <h2 align="center">Fomulário</h2>
+    <form action="arquivo.sql" method="post">
+        <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size="60"/></p>
+        <p>Telefone: <input type="tel" placeholder="DDD-00000-0000" maxlength="11"/></p>
+        <p>Data de Nascimento: <input type="date"/></p>
+        <p>Senha: <input type="password" maxlength="8"/></p>
+        <p>Email: <input type="email"/></p>
+        <p>Idade: <input type="number"/></p>
+        <p> Comentários:
+            <textarea rows="10" cols="5"></textarea>
+        </p>
+        <!--Estrutura de Opções-->
+        <p> Estado de Nascimento:
+            <br />
+    <input type="radio" name="Estados" value="DF"/>DF
+            <br />
+    <input type="radio" name="Estados" value="Goiás"/>Goiás
+            <br />
+    <input type="radio" name="Estados" value="Bahia"/>Bahia
+    <!--Estrutura de Seleção-->
+    <p> Países da América Latina:
+        <select>
+            <option></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Peru">Peru</option>
+        </select>
+    </p>
+    <!--Estrutura do Checkbox e Envio-->
+    <p><input type="checkbox"/>Aceito fazer parte da Ceita do HMTL!!!</p>
+    <p><input type="checkbox"/></p>
+    <p><input type="checkbox"/></p>
+
+    <input type="reset" name="reset"/>
+    <input type="submit" name="enviar"/>
+            <br />
+    </form>
+    <br />
+    <br />
+    <!--Fieldset-->
+    <fieldset>
+        <legend align="center">Dados Pessoais</legend>
+<label>Nome: <input type="text" name="texto"/></label>
+<br />
+<br />
+<label>CPF: <input type="text" name="cpf"/></label>
+    </fieldset>
+</body>
+</html>

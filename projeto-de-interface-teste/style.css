@@ -1,0 +1,76 @@
+/*Primeiros passos do CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+ body {
+    background-color: rgb(255, 255, 255);
+    border: red solid 1px;
+}
+
+p {
+    text-align: center;
+    margin: 20px auto;
+
+}
+
+h2 {
+    color: rgba(95, 13, 218, 0.956);
+}
+
+/*configurações do menu*/
+#bodyindex {
+    background-color: #cec1c1;
+    text-align: left;
+    border-width: 10px;
+    margin: 20 auto;
+    border: rgb(34, 146, 137) solid 1px;
+}
+
+.menu {
+    list-style: none;
+    border: 2px solid rgba(207, 207, 207, 0.616);
+    float: left;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 2px solid brown;
+    border-left: 2px solid brown;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: rgb(128, 146, 168);
+    color: crimson;
+    box-shadow: 3px 10px 0px blue;
+    text-shadow: 0px 0px 5px white;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: rgb(228, 228, 228);
+    display: none;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid brown;
+    display: block;
+    width: 100px;
+}
