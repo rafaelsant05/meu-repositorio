@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <link rel="StyleSheet" type="text/css" href="./style.css"/>
+    <a id="topo"></a>
+</head>
+
+<body>
+    <h1>Formulário Completo</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label for="nome">1. Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="sobrenome">2. Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome"><br><br>
+
+            <label for="email">3. E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">4. Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="nascimento">5. Data de Nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento"><br><br>
+
+            <label for="idade">6. Idade:</label><br>
+            <input type="number" id="idade" name="idade"><br><br>
+
+            <label for="genero">7. Gênero:</label><br>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select><br><br>
+
+            <label>8. Estado civil:</label><br>
+            <input type="radio" name="estado_civil" value="solteiro" required> Solteiro(a)<br>
+            <input type="radio" name="estado_civil" value="casado"> Casado(a)<br>
+            <input type="radio" name="estado_civil" value="outro"> Outro<br><br>
+
+            <label for="cidade">9. Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br><br>
+
+            <label for="estado">10. Estado:</label><br>
+            <input type="text" id="estado" name="estado"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Profissionais</legend>
+
+            <label for="curso">11. Curso de formação:</label><br>
+            <input type="text" name="curso" id="curso"><br><br>
+
+            <label for="profissao">12. Profissão:</label><br>
+            <input type="text" id="profissao" name="profissao"><br><br>
+
+            <label for="github">13. GitHub:</label><br>
+            <input type="url" id="github" name="github"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências Pessoais </legend>
+
+            <label>14. Linguagens que você conhece:</label><br>
+            <input type="checkbox" name="linguagens" value="html" required> HTML<br>
+            <input type="checkbox" name="linguagens" value="css"> CSS<br>
+            <input type="checkbox" name="linguagens" value="javascript"> JavaScript<br>
+            <input type="checkbox" name="linguagens" value="java">Java <br>
+            <input type="checkbox" name="linguagens" value="python"> Python<br><br>
+
+            <label for="cor">15. Cor favorita:</label><br>
+            <input type="color" id="cor" name="cor"><br><br>
+
+            <label for="tempo">16. Quanto tempo tem que você começou a programar:</label><br>
+            <input type="text" id="tempo" name="tempo"><br><br>
+
+
+            <label>18. Aceita os termos?:</label><br>
+            <input type="checkbox" id="termos" name="termos"><br>
+
+        </fieldset>
+        <br>
+        <input type="reset" value="resetar"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="#topo">Voltar ao inicio da página</a><br><br>
+    <p><a href="index.html">Voltar para a página inicial</a></p>
+</body>
+
+</html>
